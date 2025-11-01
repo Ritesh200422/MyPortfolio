@@ -2,12 +2,12 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "lottie-react";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 
 
 import { BackgroundGradientAnimation } from "./background-gradient-animation";
 import { GlobeDemo } from "./gridglobe";
-import animationData from "@/app/data/confetti.json";
+import animationData from "../../app/data/confetti.json";
 import MagicButtons from "./MagicButtons";
 
 export const BentoGrid = ({
@@ -162,12 +162,12 @@ export const BentoGridItem = ({
           )}
           {id === 6 && (
             <div className="mt-5 relative">
-             
+
               <div
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}
               >
-               
+
                 <Lottie
                   animationData={animationData}
                   loop={copied}

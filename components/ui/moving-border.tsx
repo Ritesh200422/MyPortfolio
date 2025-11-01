@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import {
   motion,
   useAnimationFrame,
@@ -7,8 +7,7 @@ import {
   useMotionValue,
   useTransform,
 } from "motion/react";
-import { useRef } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 
 export function Button({
   borderRadius = "1.75rem",
@@ -32,7 +31,7 @@ export function Button({
   return (
     <Component
       className={cn(
-        "relative h-16 w-40 overflow-hidden bg-transparent p-[1px] text-xl",
+        "relative h-16 w-40 overflow-hidden bg-transparent p-px text-xl",
         containerClassName,
       )}
       style={{
@@ -82,27 +81,44 @@ export const MovingBorder = ({
   ry?: string;
   [key: string]: any;
 }) => {
-  const pathRef = useRef<any>();
-  const progress = useMotionValue<number>(0);
+  const pathRef = useRef<SVGRectElement | null>(null);
+  const progress = useMotionValue(0);
 
   useAnimationFrame((time) => {
-    const length = pathRef.current?.getTotalLength();
-    if (length) {
+    const length = pathRef.current?.getTotalLength?.();
+    if (length && duration > 0) {
       const pxPerMillisecond = length / duration;
       progress.set((time * pxPerMillisecond) % length);
     }
   });
 
-  const x = useTransform(
-    progress,
-    (val) => pathRef.current?.getPointAtLength(val).x,
-  );
-  const y = useTransform(
-    progress,
-    (val) => pathRef.current?.getPointAtLength(val).y,
-  );
+  // Safely get x/y positions only after pathRef is available
+  const x = useTransform(progress, (val) => {
+    if (!pathRef.current) return 0;
+    try {
+      const point = pathRef.current.getPointAtLength(val);
+      return point?.x ?? 0;
+    } catch {
+      return 0;
+    }
+  });
 
-  const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;
+  const y = useTransform(progress, (val) => {
+    if (!pathRef.current) return 0;
+    try {
+      const point = pathRef.current.getPointAtLength(val);
+      return point?.y ?? 0;
+    } catch {
+      return 0;
+    }
+  });
+
+  const transform = useMotionTemplate`
+    translateX(${x}px)
+    translateY(${y}px)
+    translateX(-50%)
+    translateY(-50%)
+  `;
 
   return (
     <>

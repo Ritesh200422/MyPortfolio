@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import { workExperience } from "@/app/data";
-import { Button } from "@/components/ui/moving-border";
+import { workExperience } from "../app/data";
+import { Button } from "../components/ui/moving-border";
 
 const Experience = () => {
   return (
@@ -31,7 +31,7 @@ const Experience = () => {
                     {card.title}
                   </h2>
                 </div>
-                <p className="text-gray-300 text-lg leading-relaxed flex-grow">
+                <p className="text-gray-300 text-lg leading-relaxed grow">
                   {card.desc}
                 </p>
               </div>
