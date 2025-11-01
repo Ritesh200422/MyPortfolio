@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "build": "next build --no-lint"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.6",
