@@ -82,7 +82,7 @@ export const projects = [
         id: 2,
         title: "Insight Stream - Real-time News Sentiment Analysis",
         des: "A machine learning-based web app that performs real-time sentiment analysis of news articles using NLP models to determine public opinion trends and insights.",
-        img: "/insightstream.svg",
+        img: "/news.svg",
         iconLists: ["/py.svg", "/nlp.svg", "/next.svg", "/node.svg", "/tail.svg", "/kafka.svg"],
         link: "https://github.com/Ritesh200422/Insight-Stream/tree/master",
     },
@@ -90,7 +90,7 @@ export const projects = [
         id: 3,
         title: "Financial AI Advisor App",
         des: "A Flutter-based AI-powered financial advisor that provides personalized investment recommendations and financial planning insights using ML algorithms.",
-        img: "/financialai.svg",
+        img: "/stock.svg",
         iconLists: ["/flutter.svg", "/dart.svg", "/py.svg", "/ml.svg"],
         link: "https://github.com/Ritesh200422/mymoneymentor", // update if needed
     },
@@ -98,8 +98,8 @@ export const projects = [
         id: 4,
         title: "Heart Disease Prediction",
         des: "A machine learning model that predicts the likelihood of heart disease based on patient data using algorithms like Logistic Regression and Random Forest.",
-        img: "/heartdisease.svg",
-        iconLists: ["/py.svg", "/sklearn.svg", "/pandas.svg", "/ml.svg"],
+        img: "/heart.svg",
+        iconLists: ["/py.svg", "/sklearn.svg", "/Pandas.svg", "/ml.svg"],
         link: "https://github.com/Ritesh200422/End-To-End-Heart-Disease-Classification", // update if needed
     },
     {
@@ -107,7 +107,7 @@ export const projects = [
         title: "Bulldozer Price Prediction",
         des: "A regression-based ML project that predicts the sale prices of bulldozers using historical data, feature engineering, and model tuning with Scikit-learn.",
         img: "/bulldozer.svg",
-        iconLists: ["/py.svg", "/sklearn.svg", "/pandas.svg", "/ml.svg"],
+        iconLists: ["/py.svg", "/sklearn.svg", "/Pandas.svg", "/ml.svg"],
         link: "https://github.com/Ritesh200422/Bulldozer-Price-Prediction", // update if needed
     },
 ];
