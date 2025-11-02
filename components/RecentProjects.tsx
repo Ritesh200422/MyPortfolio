@@ -1,27 +1,24 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
-
 import { projects } from "../app/data";
-import { PinContainer} from "../components/ui/3d-pin";
-
+import { PinContainer } from "../components/ui/3d-pin";
 
 const RecentProjects = () => {
     return (
-        <div className="py-20 " id="projects">
-            <h1 className="heading text-center font-bold text-3xl">
-                A small selection of {"                  "}
+        <div className="py-20" id="projects">
+            <h1 className="heading text-center font-bold text-5xl">
+                A small selection of{" "}
                 <span className="text-purple-500">recent projects</span>
             </h1>
+
             <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
                 {projects.map((item) => (
                     <div
-                        className="lg:min-h-130 h-100 flex items-center justify-center sm:w-96 w-[80vw]"
                         key={item.id}
+                        className="lg:min-h-130 h-100 flex items-center justify-center sm:w-96 w-[80vw]"
                     >
-                        <PinContainer title={item.title} href={item.link}
-                            
-                        >
+                        <PinContainer title={item.title} href={item.link}>
                             <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                                 <div
                                     className="relative w-full h-full overflow-hidden lg:rounded-3xl"
@@ -60,7 +57,7 @@ const RecentProjects = () => {
                                                 transform: `translateX(-${5 * index + 2}px)`,
                                             }}
                                         >
-                                            <img src={icon} alt="icon5" className="p-2" />
+                                            <img src={icon} alt="icon" className="p-2" />
                                         </div>
                                     ))}
                                 </div>

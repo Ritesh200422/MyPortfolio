@@ -1,7 +1,7 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
+    // { name: "Testimonials", link: "#testimonials" },
     { name: "Contact", link: "#contact" },
 ];
 
@@ -76,7 +76,7 @@ export const projects = [
         des: "A Next.Js based Image editor using opencv with improving image capabilities.",
         img: "/metamorph.svg",
         iconLists: ["/next.svg", "/mysql.svg", "/js.svg", "/tail.svg", "/node.svg"],
-        link: "https://github.com/riteshprabhu03/metamorph",
+        link: "https://github.com/Ritesh200422/MetaMorph",
     },
     {
         id: 2,
@@ -84,7 +84,7 @@ export const projects = [
         des: "A machine learning-based web app that performs real-time sentiment analysis of news articles using NLP models to determine public opinion trends and insights.",
         img: "/insightstream.svg",
         iconLists: ["/py.svg", "/nlp.svg", "/next.svg", "/node.svg", "/tail.svg", "/kafka.svg"],
-        link: "https://github.com/riteshprabhu03/insight-stream",
+        link: "https://github.com/Ritesh200422/Insight-Stream/tree/master",
     },
     {
         id: 3,
@@ -92,7 +92,7 @@ export const projects = [
         des: "A Flutter-based AI-powered financial advisor that provides personalized investment recommendations and financial planning insights using ML algorithms.",
         img: "/financialai.svg",
         iconLists: ["/flutter.svg", "/dart.svg", "/py.svg", "/ml.svg"],
-        link: "https://github.com/riteshprabhu03/financial-ai-advisor", // update if needed
+        link: "https://github.com/Ritesh200422/mymoneymentor", // update if needed
     },
     {
         id: 4,
@@ -100,7 +100,7 @@ export const projects = [
         des: "A machine learning model that predicts the likelihood of heart disease based on patient data using algorithms like Logistic Regression and Random Forest.",
         img: "/heartdisease.svg",
         iconLists: ["/py.svg", "/sklearn.svg", "/pandas.svg", "/ml.svg"],
-        link: "https://github.com/riteshprabhu03/heart-disease-prediction", // update if needed
+        link: "https://github.com/Ritesh200422/End-To-End-Heart-Disease-Classification", // update if needed
     },
     {
         id: 5,
@@ -108,7 +108,7 @@ export const projects = [
         des: "A regression-based ML project that predicts the sale prices of bulldozers using historical data, feature engineering, and model tuning with Scikit-learn.",
         img: "/bulldozer.svg",
         iconLists: ["/py.svg", "/sklearn.svg", "/pandas.svg", "/ml.svg"],
-        link: "https://github.com/riteshprabhu03/bulldozer-price-prediction", // update if needed
+        link: "https://github.com/Ritesh200422/Bulldozer-Price-Prediction", // update if needed
     },
 ];
 
