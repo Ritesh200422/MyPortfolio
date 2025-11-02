@@ -11,7 +11,7 @@ const Experience = () => {
         My <span className="text-purple-500">work experience</span>
       </h1>
 
-      <div className="w-full mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
+      <div className="w-full mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4 items-center justify-center">
         {workExperience.map((card) => (
           <div key={card.id} className="w-full h-full min-h-[300px]">
             <Button
@@ -20,7 +20,7 @@ const Experience = () => {
               className="w-full h-full text-white dark:text-white bg-slate-900 dark:bg-slate-900 border-none"
               containerClassName="w-full h-full"
             >
-              <div className="flex flex-col p-6 h-full w-full">
+              <div className="flex flex-col p-6 h-full w-full ">
                 <div className="flex items-center gap-4 mb-4">
                   <img
                     src={card.thumbnail}

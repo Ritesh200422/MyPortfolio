@@ -8,7 +8,7 @@ export const navItems = [
 export const gridItems = [
     {
         id: 1,
-        title: "I prioritize client collaboration, fostering open communication ",
+        title: "I am in love with development and DSA currently trying out CP",
         description: "",
         className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
         imgClassName: "w-full h-full",
@@ -72,8 +72,8 @@ export const gridItems = [
 export const projects = [
     {
         id: 1,
-        title: "MetaMorph - Student Feedback System",
-        des: "A full-stack web app built using Next.js and MySQL to collect and analyze student feedback. Includes secure logins for students, HODs, and principals with CAPTCHA verification and App Router integration.",
+        title: "MetaMorph - Image Compressor and Editor",
+        des: "A Next.Js based Image editor using opencv with improving image capabilities.",
         img: "/metamorph.svg",
         iconLists: ["/next.svg", "/mysql.svg", "/js.svg", "/tail.svg", "/node.svg"],
         link: "https://github.com/riteshprabhu03/metamorph",
@@ -83,7 +83,7 @@ export const projects = [
         title: "Insight Stream - Real-time News Sentiment Analysis",
         des: "A machine learning-based web app that performs real-time sentiment analysis of news articles using NLP models to determine public opinion trends and insights.",
         img: "/insightstream.svg",
-        iconLists: ["/py.svg", "/sklearn.svg", "/react.svg", "/node.svg", "/tail.svg"],
+        iconLists: ["/py.svg", "/nlp.svg", "/next.svg", "/node.svg", "/tail.svg", "/kafka.svg"],
         link: "https://github.com/riteshprabhu03/insight-stream",
     },
     {
@@ -183,25 +183,24 @@ export const companies = [
 export const workExperience = [
     {
         id: 1,
-        title: "Frontend Engineer Intern",
-        desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+        title: "Software Development Intern ",
+        desc: "Designed and developed the MIS - Student Feedback System for Dr. Ambedkar Institute of Technology ",
         className: "md:col-span-2",
         thumbnail: "/exp1.svg",
     },
-    
+
 ];
 
 export const socialMedia = [
     {
         id: 1,
         img: "/git.svg",
+        href:"https://github.com/Ritesh200422"
     },
+    
     {
         id: 2,
-        img: "/twit.svg",
-    },
-    {
-        id: 3,
         img: "/link.svg",
+        href: "https://www.linkedin.com/in/ritesh-ramesh-prabhu/?originalSubdomain=in"
     },
 ];

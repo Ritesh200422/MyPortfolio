@@ -73,4 +73,9 @@
   animation: scroll var(--animation-duration, 40s)
     linear infinite var(--animation-direction, forwards);
 }
+html {
+  scroll-padding-top: 6rem; /* adjust this to match your navbar height */
+  scroll-behavior: smooth;
+}
+
 

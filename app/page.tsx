@@ -4,20 +4,20 @@ import { FaHome } from "react-icons/fa";
 import Grid from "../components/Grid";
 import RecentProjects from "../components/RecentProjects";
 import Experience from "../components/Experience";
-import Clients from "../components/Clients";
+// import Clients from "../components/Clients";
 
 import { navItems } from "./data";
 import Approach from "../components/Approach";
 import Footer from "../components/Footer";
 const Home = () => {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className="bg-black-100 flex flex-col overflow-hidden mx-auto items-center sm:px-10 px-5 min-h-screen">
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
         <RecentProjects />
-        <Clients />
+        {/* <Clients /> */}
         <Experience />
         <Approach />
         <Footer />
