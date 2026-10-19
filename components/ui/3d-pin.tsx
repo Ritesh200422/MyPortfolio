@@ -62,7 +62,7 @@ export const PinPerspective = ({
     href?: string;
 }) => {
     return (
-        <motion.div className="w-96 h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500">
+        <motion.div className="flex h-80 w-[min(24rem,calc(100vw-2.5rem))] items-center justify-center opacity-0 transition duration-500 group-hover/pin:opacity-100 z-[60]">
             <div className="w-full h-full -mt-7 flex-none inset-0">
                 {/* The clickable title button */}
                 <div className="absolute top-0 inset-x-0 flex justify-center">

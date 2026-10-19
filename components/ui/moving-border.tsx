@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import {
   motion,
   useAnimationFrame,
@@ -12,7 +12,6 @@ import { cn } from "../../lib/utils";
 export function Button({
   borderRadius = "1.75rem",
   children,
-  as: Component = "button",
   containerClassName,
   borderClassName,
   duration,
@@ -21,15 +20,13 @@ export function Button({
 }: {
   borderRadius?: string;
   children: React.ReactNode;
-  as?: any;
   containerClassName?: string;
   borderClassName?: string;
   duration?: number;
   className?: string;
-  [key: string]: any;
-}) {
+} & React.ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
-    <Component
+    <button
       className={cn(
         "relative h-16 w-40 overflow-hidden bg-transparent p-px text-xl",
         containerClassName,
@@ -64,7 +61,7 @@ export function Button({
       >
         {children}
       </div>
-    </Component>
+    </button>
   );
 }
 
@@ -79,8 +76,7 @@ export const MovingBorder = ({
   duration?: number;
   rx?: string;
   ry?: string;
-  [key: string]: any;
-}) => {
+} & Omit<React.SVGProps<SVGSVGElement>, "children">) => {
   const pathRef = useRef<SVGRectElement | null>(null);
   const progress = useMotionValue(0);
 

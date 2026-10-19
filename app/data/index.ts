@@ -183,20 +183,18 @@ export const companies = [
 export const workExperience = [
     {
         id: 1,
-        title: "Software Development Intern ",
-        desc: "Designed and developed the MIS - Student Feedback System for Dr. Ambedkar Institute of Technology ",
-        className: "md:col-span-2",
+        title: "Software Development Intern",
+        project: "MIS — Student Feedback System",
+        desc: "Designed and developed an MIS student feedback system for Dr. Ambedkar Institute of Technology.",
         thumbnail: "/exp1.svg",
     },
     {
         id: 2,
-        title: "Java Fullstack Internship",
-        desc: "Woked on an full-stack Stock-Market Applicaion Namma Stocks ",
-        className: "md:col-span-2",
-        thumbnail: "/exp1.svg",
-
+        title: "Java Full-Stack Intern",
+        project: "Jspiders - Namma Stocks",
+        desc: "Worked on Namma Stocks, a full-stack stock market application.",
+        thumbnail: "/exp2.svg",
     }
-
 ];
 
 export const socialMedia = [
