@@ -188,6 +188,14 @@ export const workExperience = [
         className: "md:col-span-2",
         thumbnail: "/exp1.svg",
     },
+    {
+        id: 2,
+        title: "Java Fullstack Internship",
+        desc: "Woked on an full-stack Stock-Market Applicaion Namma Stocks ",
+        className: "md:col-span-2",
+        thumbnail: "/exp1.svg",
+
+    }
 
 ];
 
@@ -195,9 +203,9 @@ export const socialMedia = [
     {
         id: 1,
         img: "/git.svg",
-        href:"https://github.com/Ritesh200422"
+        href: "https://github.com/Ritesh200422"
     },
-    
+
     {
         id: 2,
         img: "/link.svg",
